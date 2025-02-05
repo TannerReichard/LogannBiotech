@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>LogannMilitaryState</defName>
+		<label>LMS Military</label>
+		<pawnSingular>LogannM</pawnSingular>
+		<pawnsPlural>Logann</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<description>A colony of the Logan Military State, consisting of Logann troops and a few assorted mercenaries.</description>
+		<factionIconPath>World/WorldObjects/Expanding/LogannMilitaryState</factionIconPath>
+
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>				
+				<Logann>0.85</Logann>			
+				<Hussar>0.05</Hussar>
+				<Dirtmole>0.05</Dirtmole>
+				<Baseliner>0.05</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+	
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<naturalEnemy>false</naturalEnemy>
+		<techLevel>Ultra</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<colorSpectrum>
+			<li>(1, 0.92, 0.016)</li>
+			<li>(0, 1, 0)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li MayRequire="Ludeon.Rimworld.Ideology">C_Logann</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Astropolitan</li>
+		</allowedCultures>
+		<!-- add more to this later when deciding Logann cultures -->
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		</disallowedMemes>
+		
+		<leaderTitle>General</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-30~50</allowedArrivalTemperatureRange>
+	</FactionDef>
+</Defs>

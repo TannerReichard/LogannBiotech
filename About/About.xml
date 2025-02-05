@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Logann - Biotech Edition</name>
+    <author>Hollow Notes</author>
+    <packageId>logann.biotech</packageId>
+    <supportedVersions>
+		<li>1.5</li>
+    </supportedVersions>
+    <modDependencies>
+	 <li>
+		<packageId>sarg.alphagenes</packageId>
+		<displayName>Alpha Genes</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2891845502</steamWorkshopUrl>
+	 </li>
+	 <li>
+		<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+	 </li>
+     <li>
+        <packageId>Ludeon.RimWorld.Biotech</packageId>
+        <displayName>Biotech</displayName>
+     </li>
+    </modDependencies>
+    <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>oskarpotocki.vanillafactionsexpanded.core</li>
+		<li>sarg.alphagenes</li>
+    </loadAfter>
+    <description>Reimplements the Logann Race, a humanoid wolverine species originally created by ChJees and Xen, as a new xenotype through the biotech gene system.</description>
+</ModMetaData>

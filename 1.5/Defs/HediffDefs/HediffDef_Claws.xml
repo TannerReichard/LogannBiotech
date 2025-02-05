@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>RetractableClaws</defName>
+		<label>retractable claws</label>
+		<labelNoun>claws</labelNoun>
+		<description>Carriers of this gene have large claws that extend at-will from their knuckles. Provides sharp damage to melee attacks and slightly increases manipulation.</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>retractable claws</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>10</power>
+						<armorPenetration>0.05</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

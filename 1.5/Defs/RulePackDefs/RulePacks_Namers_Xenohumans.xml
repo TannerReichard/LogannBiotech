@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================== Logann Base ======================-->
+
+	<RulePackDef Name="NamerLogannBase" Abstract="True">
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=2) ->[firstName] '[LogannNick]' [LogannSurname]</li>
+				<li>r_name ->[firstName] '[LogannConcept]' [LogannSurname]</li>
+				<li>r_name->[firstName] [LogannSurname]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>LogannSurname->Names/LogannSurname</li>
+				<li>LogannNick->Names/LogannNick</li>
+				<li>LogannConcept->Names/LogannConcept</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+		
+	<!--====================== Logann Male Names ======================-->
+		
+	<RulePackDef ParentName="NamerLogannBase">
+		<defName>NamerPersonLogann_Male</defName>
+		<rulePack>
+			<rulesRaw>
+				<li Class="Rule_NamePerson">
+					<keyword>firstName</keyword>
+					<gender>Male</gender>
+				</li>
+			</rulesRaw>
+			<rulesStrings>
+				<li>firstName(p=10)->[LogannFirstMasc]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>LogannFirstMasc->Names/LogannFirstMasc</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+		
+	<!--====================== Logann Female Names ======================-->
+		
+	<RulePackDef ParentName="NamerLogannBase">
+		<defName>NamerPersonLogann_Female</defName>
+		<rulePack>
+			<rulesRaw>
+				<li Class="Rule_NamePerson">
+					<keyword>firstName</keyword>
+					<gender>Female</gender>
+				</li>
+			</rulesRaw>
+			<rulesStrings>
+				<li>firstName(p=10)->[LogannFirstFem]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>LogannFirstFem->Names/LogannFirstFem</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+		
+</Defs>

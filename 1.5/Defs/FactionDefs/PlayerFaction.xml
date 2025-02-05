@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- Player faction: Standard -->
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>LogannPlayerColony</defName>
+		<label>Logann Colony</label>
+		<description>A Logann outpost.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>LogannColonist</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li MayRequire="Ludeon.Rimworld.Ideology">C_Logann</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Rustican</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>1</commonality>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/LogannPlayerSettlement</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<LogannMilitaryState>10~50</LogannMilitaryState>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	
+	
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Claws -->
+	
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>RetractableClaws</defName>
+		<label>retractable claws</label>
+		<description>Carriers of this gene have large claws that extend at-will from their knuckles. Provides sharp damage to melee attacks and slightly increases manipulation.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_RetractableClaws</iconPath>
+		<displayCategory>Logann</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Unarmed melee attacks inflict sharp damage.</li>
+		</customEffectDescriptions><capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>1.05</postFactor>
+			</li>
+		</capMods>
+	<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+				<li>
+				<hediff>RetractableClaws</hediff>
+				<bodyparts>
+					<li>Hand</li>
+					<li>Hand</li>
+				</bodyparts>
+				</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<!-- Claws -->
+	
+	
+</Defs>

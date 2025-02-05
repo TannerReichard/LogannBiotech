@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<HeadTypeDef Name="LogannHeadBase" ParentName="AverageBase" Abstract="True">
+		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
+		<narrow>false</narrow>
+		<randomChosen>true</randomChosen>
+		<selectionWeight>999999</selectionWeight>
+		<requiredGenes>
+			<li>Logannhead</li>
+		</requiredGenes>
+		<eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="LogannHeadBase">
+		<defName>LogannHead_Male</defName>
+		<gender>Male</gender>
+		<graphicPath>Things/Pawn/Humanlike/Heads/LogannHeadMale</graphicPath>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="LogannHeadBase">
+		<defName>LogannHead_Female</defName>
+		<gender>Female</gender>
+		<graphicPath>Things/Pawn/Humanlike/Heads/LogannHeadFemale</graphicPath>
+	</HeadTypeDef>
+  
+	
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FurDef>
+    <defName>L_WolverineFur</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+		<Male>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Male</Male>
+		<Female>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Female</Female>
+		<Hulk>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Hulk</Hulk>
+		<Fat>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Fat</Fat>
+		<Thin>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Thin</Thin>
+		<Child>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Child</Child>
+		<Baby>Things/Pawn/Humanlike/Bodies/Naked_WolverineFur_Child</Baby><!-- Always covered by swaddled graphic -->
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>
