@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
+
+	<!--============================== Main Faction Spawner ============================-->
+	<!-- based on the baseline outlander spawn -->
+	
 	<FactionDef ParentName="OutlanderFactionBase">
 		<defName>LogannMilitaryState</defName>
 		<label>LMS Military</label>
-		<pawnSingular>LogannM</pawnSingular>
+		<pawnSingular>Logann</pawnSingular>
 		<pawnsPlural>Logann</pawnsPlural>
 		<categoryTag>Outlander</categoryTag>
-		<description>A colony of the Logan Military State, consisting of Logann troops and a few assorted mercenaries.</description>
+		<description>An outpost of the Logan Military State, consisting of Logann troops and a few assorted mercenaries.</description>
 		<factionIconPath>World/WorldObjects/Expanding/LogannMilitaryState</factionIconPath>
 
-		<xenotypeSet Inherit="False">
+		<xenotypeSet Inherit="False"> <!--we could make this full Logann if we wanted but there were always a few baseliners added in the og faction so I wanted to leave it-->
 			<xenotypeChances>				
 				<Logann>0.85</Logann>			
 				<Hussar>0.05</Hussar>
@@ -26,15 +31,16 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<naturalEnemy>false</naturalEnemy>
 		<techLevel>Ultra</techLevel>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<factionNameMaker>NamerFactionLogann</factionNameMaker>
+		<settlementNameMaker>NamerSettlementLogann</settlementNameMaker>
+		<!--color of the logo...orange like the original? -->
 		<colorSpectrum>
-			<li>(1, 0.92, 0.016)</li>
-			<li>(0, 1, 0)</li>
+			<li>(1, 0.3, 0.016)</li>
+			<li>(0.925, 0.6, 0.035)</li>
 		</colorSpectrum>
 		<allowedCultures>
 			<li MayRequire="Ludeon.Rimworld.Ideology">C_Logann</li>
-			<li MayRequire="Ludeon.Rimworld.Ideology">Astropolitan</li>
+			<!--<li MayRequire="Ludeon.Rimworld.Ideology">Astropolitan</li>--> <!--this is a placeholder, left here for posterity or in case something breaks-->
 		</allowedCultures>
 		<!-- add more to this later when deciding Logann cultures -->
 		<requiredMemes>
@@ -57,6 +63,73 @@
 		<baseTraderKinds>
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
-		<allowedArrivalTemperatureRange>-30~50</allowedArrivalTemperatureRange>
+		<allowedArrivalTemperatureRange>-50~45</allowedArrivalTemperatureRange>
+		
+		<!-- i'm going to be honest, in this next spawner section the math here is extremely weird and there's a high chance this breaks -->
+		
+		<!-- if this section goes bork i think i know how to reimplement it without using the total cost curve -->
+		
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<LogannColonistPawn>50</LogannColonistPawn>
+					<LogannSecurityPawn>90</LogannSecurityPawn>
+					<LogannExecutivePawn>250</LogannExecutivePawn>
+					<LogannMercPawn>100</LogannMercPawn>
+					<LogannBrawlerPawn>130</LogannBrawlerPawn>
+					<LogannOfficerPawn>130</LogannOfficerPawn>
+					<LogannNinjaPawn>170</LogannNinjaPawn>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<LogannColonistPawn>50</LogannColonistPawn>
+					<LogannSecurityPawn>90</LogannSecurityPawn>
+					<LogannExecutivePawn>250</LogannExecutivePawn>
+					<LogannMercPawn>100</LogannMercPawn>
+					<LogannNinjaPawn>170</LogannNinjaPawn>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<LogannTraderPawn>1</LogannTraderPawn>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+					<LogannSecurityPawn>90</LogannSecurityPawn>
+					<LogannMercPawn>100</LogannMercPawn>
+					<LogannBrawlerPawn>130</LogannBrawlerPawn>
+					<LogannOfficerPawn>130</LogannOfficerPawn>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<LogannMilBasePawn>50</LogannMilBasePawn>
+					<LogannColonistPawn>70</LogannColonistPawn>
+					<LogannSecurityPawn>90</LogannSecurityPawn>
+					<LogannExecutivePawn>250</LogannExecutivePawn>
+					<LogannMercPawn>100</LogannMercPawn>
+					<LogannBrawlerPawn>130</LogannBrawlerPawn>
+					<LogannOfficerPawn>130</LogannOfficerPawn>
+					<LogannNinjaPawn>170</LogannNinjaPawn>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 </Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerFactionLogann</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[firstPart]'[secondPart] [union]</li>
+
+				<li>firstPart->Logann</li>
+				<li>firstPart->LMS</li>
+
+				<li>secondPart->Military</li>
+				<li>secondPart->Mercenary</li>
+				<li>secondPart->Marqued</li>
+				<li>secondPart->1st</li>
+				<li>secondPart->7th</li>
+				<li>secondPart->53rd</li>
+				<li>secondPart->117th</li>
+				<li>secondPart->222nd</li>
+
+				<li>union->Division</li>
+				<li>union->Company</li>
+				<li>union->Battalion</li>
+				<li>union->Outpost</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSettlementLogann</defName>
+		<include>
+			<li>NamerFactionLogann</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[firstPart] [secondPart]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

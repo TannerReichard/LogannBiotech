@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--Pillux Home destroyed:2-->
+	<!--Logann Main-->
 	<ScenarioDef>
-		<defName>LogannMercs</defName>
-		<label>Logann Mercs</label>
-		<description>Three Logann set out from the main base to form their own mercenary company.</description>
+		<defName>LogannOutpost</defName>
+		<label>Logann Outpost</label>
+		<description>Three Logann set out from the main base under direction from CentCom to form a new outpost.</description>
 		<scenario>
-			<summary>New Logann Merc Company.</summary>
+			<summary>Three Logann with basic equipment. Roughly normal start. </summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>LogannPlayerColony</factionDef>
@@ -15,8 +15,8 @@
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 					<def>ConfigurePawnsXenotypes</def>
-					<pawnChoiceCount>3</pawnChoiceCount>
-					<customSummary>Start with just Logann.</customSummary>
+					<pawnChoiceCount>6</pawnChoiceCount>
+					<customSummary>Start with a group of Logann Soldiers.</customSummary>
 					<overrideKinds>
 						<li>
 							<xenotype>Logann</xenotype>
@@ -27,7 +27,7 @@
 						<li>
 							<xenotype>Logann</xenotype>
 							<count>3</count>
-							<description>logann</description>
+							<description>Logann</description>
 							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
 						</li>
 					</xenotypeCounts>
@@ -35,29 +35,50 @@
 				<!-- Pawn Arrive Method -->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-					<method>Standing</method>
+					<method>DropPods</method>
 				</li>
 				<!-- Player Starting Items -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Silver</thingDef>
-					<count>30</count>
+					<count>300</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Pemmican</thingDef>
-					<count>150</count>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>75</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MedicineIndustrial</thingDef>
-					<count>5</count>
+					<count>15</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MeleeWeapon_Knife</thingDef>
+					<thingDef>WolverineAxe</thingDef>
 					<stuff>Steel</stuff>
-					<count>2</count>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WolverineShotgun</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WolverineKatana</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakPants</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakVest</thingDef>
+					<count>3</count>
 				</li>
 				<!-- Scattered Items Throughout Map -->
 				<li Class="ScenPart_ScatterThingsAnywhere">
@@ -68,17 +89,22 @@
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
 					<thingDef>Steel</thingDef>
-					<count>205</count>
+					<count>405</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>
 					<thingDef>WoodLog</thingDef>
 					<count>250</count>
 				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>25</count>
+				</li>
 				<!-- Starting Message -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>Three Logann set out from the main base to form their own mercenary company.</text>
+					<text>Three Logann were sent to this Rimworld under directive from CentCom to make a new foothold in the area when their transport ship suffered a critical failure and needed to deploy lifeboats. While there may be friendly Logann groups in the area, their directives were not discussed in your marching orders. Building up your base is priority number one until you can re-establish communication.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 			</parts>

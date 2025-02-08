@@ -12,9 +12,12 @@
     <techLevel>Industrial</techLevel>
     <weaponTags>
       <li>IndustrialMeleeAdvanced</li>
+      <li>LogannWep</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
-	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	<thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <statBases>
       <WorkToMake>20000</WorkToMake>
       <Mass>1.5</Mass>

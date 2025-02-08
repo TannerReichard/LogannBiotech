@@ -34,6 +34,7 @@
     </weaponClasses>
 	<weaponTags>
       <li>IndustrialGunAdvanced</li>
+        <li>LogannWep</li>
     </weaponTags>
     <verbs>
       <li>
@@ -43,7 +44,7 @@
         <warmupTime>1.2</warmupTime>
         <range>11.1</range>
         <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>Shot_Shotgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

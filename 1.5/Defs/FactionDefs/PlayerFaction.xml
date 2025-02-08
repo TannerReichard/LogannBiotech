@@ -11,8 +11,8 @@
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<factionNameMaker>NamerFactionLogann</factionNameMaker>
+		<settlementNameMaker>NamerSettlementLogann</settlementNameMaker>
 		<allowedCultures>
 			<li MayRequire="Ludeon.Rimworld.Ideology">C_Logann</li>
 			<li MayRequire="Ludeon.Rimworld.Ideology">Rustican</li>
@@ -42,7 +42,7 @@
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<LogannMilitaryState>10~50</LogannMilitaryState>
+					<LogannMilitaryState>15~60</LogannMilitaryState>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>

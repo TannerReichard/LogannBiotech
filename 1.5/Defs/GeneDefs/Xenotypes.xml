@@ -13,7 +13,7 @@
 	<chanceToUseNameMaker>100</chanceToUseNameMaker>
     <combatPowerFactor>1.3</combatPowerFactor>
 		<genes>
-			<li>Aggression_HyperAggressive</li>
+			<li>Aggression_Aggressive</li>
 			<li>Logann_ears</li>
 			<li>Logannhead</li>
 			<li>WolverineFur</li>

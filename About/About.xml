@@ -6,6 +6,7 @@
     <supportedVersions>
 		<li>1.5</li>
     </supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/Icons/ModIcon/LogannModIcon</modIconPath>
     <modDependencies>
 	 <li>
 		<packageId>sarg.alphagenes</packageId>
@@ -29,5 +30,5 @@
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>sarg.alphagenes</li>
     </loadAfter>
-    <description>Reimplements the Logann Race, a humanoid wolverine species originally created by ChJees and Xen, as a new xenotype through the biotech gene system.</description>
+    <description>Reimplements the Logann Race, a humanoid wolverine species originally created by ChJees and Xen, as a new xenotype through the biotech gene system. Does not use HAR! </description>
 </ModMetaData>

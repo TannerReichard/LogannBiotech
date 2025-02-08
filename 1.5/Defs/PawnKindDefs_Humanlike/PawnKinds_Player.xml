@@ -4,14 +4,14 @@
   <PawnKindDef Abstract="True" Name="BaseLogannPlayerPawnKind">
     <race>Human</race>
     <combatPower>30</combatPower>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <initialWillRange>0~0</initialWillRange>
     <humanPregnancyChance>0.06</humanPregnancyChance>
     <xenotypeSet>
       <xenotypeChances>
-        <Logann>100</Logann>
+        <Logann MayRequire="Ludeon.RimWorld.Biotech">100</Logann>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
@@ -23,15 +23,19 @@
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
     </apparelTags>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <apparelMoney>350~600</apparelMoney>
+    <apparelMoney>800~1500</apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-    <techHediffsChance>0.03</techHediffsChance>
-    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsChance>0.20</techHediffsChance>
+    <techHediffsMoney>250~1000</techHediffsMoney>
     <techHediffsTags>
-      <li>Simple</li>
+      <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
+      <li>ImplantEmpireRoyal</li>
     </techHediffsTags>
     <techHediffsDisallowTags>
       <li>PainCauser</li>
@@ -39,4 +43,7 @@
     <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
 
+  <!--could modify this to add tribal/ultratech/alt-start loganns if we wanted to -->
+  
+  
 </Defs>
