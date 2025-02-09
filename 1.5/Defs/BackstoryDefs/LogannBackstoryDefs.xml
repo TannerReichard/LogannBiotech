@@ -319,7 +319,7 @@
 		<defName>LogannCommander</defName>
 		<title>army commander</title>
 		<titleShort>Army Commander</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] leads troops as their commander. [PAWN_pronoun] has successfully led troops through a number of conflicts.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -341,7 +341,7 @@
 		<defName>LogannMercCommander</defName>
 		<title>merc commander</title>
 		<titleShort>Merc Commander</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] leads a troop of mercenaries as their commander. [PAWN_pronoun] has successfully led troops through a number of conflicts.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -363,7 +363,7 @@
 		<defName>LogannArmySoldier</defName>
 		<title>army soldier</title>
 		<titleShort>Army Soldier</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was assigned to one of the larger units, serving through several major conflicts.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -385,7 +385,7 @@
 		<defName>LogannMercSoldier</defName>
 		<title>merc soldier</title>
 		<titleShort>Merc Soldier</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was contracted with a large mercenary unit, serving through several major conflicts.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -407,7 +407,7 @@
 		<defName>LogannGunsmith</defName>
 		<title>army gunsmith</title> <!-- could probably fluff "army" for "Logann" -->
 		<titleShort>Army Gunsmith</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef]'s training was augmented with gunsmithing and maintenance, serving [PAWN_possessive] platoon's needs for weapon maintenance and requisition.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -427,7 +427,7 @@
 		<defName>LogannMercGunmaker</defName>
 		<title>merc gunsmith</title>
 		<titleShort>Merc Gunsmith</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef]'s training was augmented with gunsmithing and maintenance, serving [PAWN_possessive] merc unit's needs for weapon maintenance and requisition.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -447,7 +447,7 @@
 		<defName>LogannDeveloper</defName>
 		<title>battlesim developer</title>
 		<titleShort>Battlesim Developer</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] has an extensive expertise in programming and tactical combat, making [PAWN_possessive] a leading expert in BattleSim development - creating extremely effective training simulations for troops.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -468,7 +468,7 @@
 		<defName>LogannEngineer</defName>
 		<title>army engineer</title>
 		<titleShort>Army Engineer</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as a combat engineer with a major army detachment, servicing vehicles and equipment.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -489,7 +489,7 @@
 		<defName>LogannMercEngineer</defName>
 		<title>merc engineer</title>
 		<titleShort>Merc Engineer</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as a combat engineer with a famous merc unit, servicing their vehicles and equipment.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -510,7 +510,7 @@
 		<defName>LogannMedic</defName>
 		<title>army medic</title>
 		<titleShort>Army Medic</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] serves as a combat medic, performing triage on the front lines, or more extensive medicine at a MASH (Mobile Army Surgical Hospital) unit.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -531,7 +531,7 @@
 		<defName>LogannMercMedic</defName>
 		<title>merc medic</title>
 		<titleShort>merc Medic</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] is contracted as a mercenary combat medic, performing triage on the front lines, or more extensive medicine at a MASH (Mobile Army Surgical Hospital) unit.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -552,7 +552,7 @@
 		<defName>LogannScout</defName>
 		<title>army scout</title>
 		<titleShort>Army Scout</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] serves as a scout for a large detachment of troops, identifying hazards and potential ambush points.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -573,7 +573,7 @@
 		<defName>LogannMercScout</defName>
 		<title>merc scout</title>
 		<titleShort>Merc Scout</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] serves as a scout for a mercenary group, identifying hazards and potential ambush points.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -594,7 +594,7 @@
 		<defName>LogannMajor</defName>
 		<title>army major</title>
 		<titleShort>Army Major</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as intelligence officer for a large army unit, providing tactical support and intel coordination for [PAWN_possessive] unit.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -616,7 +616,7 @@
 		<defName>LogannMercMajor</defName>
 		<title>merc major</title>
 		<titleShort>Merc Major</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as intelligence officer for a large mercenary corps, providing tactical support and intel coordination for [PAWN_possessive] unit.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -638,7 +638,7 @@
 		<defName>LogannPilot</defName>
 		<title>army pilot</title>
 		<titleShort>Army Pilot</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as a military pilot in a variety of fighter and support craft.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -659,7 +659,7 @@
 		<defName>LogannMercPilot</defName>
 		<title>merc pilot</title>
 		<titleShort>Merc Pilot</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was contracted as a military pilot in a variety of fighter and support craft, in multiple combat roles.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -680,7 +680,7 @@
 		<defName>LogannCommando</defName>
 		<title>army commando</title>
 		<titleShort>Army Commando</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served with a small army commando unit, executing strike or extraction missions deep behind enemy lines.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -702,7 +702,7 @@
 		<defName>LogannMercCommando</defName>
 		<title>merc commando</title>
 		<titleShort>Merc Commando</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served with a small merc commando unit, executing strike or extraction missions deep behind enemy lines.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -724,7 +724,7 @@
 		<defName>LogannDemo</defName>
 		<title>army demolitions</title>
 		<titleShort>Army Demo</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as a demolitions and heavy weapons expert in a large detachment of troops. [PAWN_pronoun] has an expertise in various explosives, as well as combat engineering.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -746,7 +746,7 @@
 		<defName>LogannMercDemo</defName>
 		<title>merc demolitions</title>
 		<titleShort>Merc Demo</titleShort>
-		<slot>Adult</slot>
+		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] served as a demolitions and heavy weapons expert in a large merc unit. [PAWN_pronoun] has an expertise in various explosives, as well as combat engineering.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -768,7 +768,7 @@
 		<defName>LogannMechwarrior</defName>
 		<title>mech pilot</title> <!-- this title and the next line are in as original, we could choose to rectify-->
 		<titleShort>Mechwarrior</titleShort>
-		<slot>Adult</slot> <!-- get ready for a DESCRIPTION -->
+		<slot>Adulthood</slot> <!-- get ready for a DESCRIPTION -->
 		<baseDesc>[PAWN_nameDef] is a Battlemech pilot, a Mech Warrior. Operating these massive walking tanks, MechWarriors serve in the armies of the Great Houses or as part of a Mercenary unit, fight in the gladiatorial arenas of Solaris VII, or operate on the fringes of society as pirates and bandits. Among the Clans, a MechWarrior can either be trueborn or freeborn, with the former enjoying greater social standing.
 			The jumpship [PAWN_pronoun] was on suffered a jump-drive malfunction, casting them off into the unknown. After waiting several weeks for rescue, with supplies running low, the crew decided to use the escape pods at the nearest habitable planet...</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>

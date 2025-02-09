@@ -12,7 +12,7 @@
 	
 	<PawnKindDef>
 		<defName>LogannColonistPawn</defName>
-		<label>logann colonist</label>
+		<label>lms colonist</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -49,7 +49,6 @@
 		<apparelMoney>300~900</apparelMoney> <!-- this also doesn't look like it'll scale well -->
 		<apparelTags>
 			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -79,7 +78,7 @@
 		-->
 		<techHediffsMoney>200~300</techHediffsMoney> <!-- if spawned with aug, make it this expensive, might need to up this -->
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance> <!--can increase spawn chance here if wanted -->
 		<useFactionXenotypes>false</useFactionXenotypes> <!-- override in next section-->
@@ -131,7 +130,7 @@
 
 	<PawnKindDef>
 		<defName>LogannExecutivePawn</defName>
-		<label>logann executive</label>
+		<label>executive</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<factionLeader>true</factionLeader>
@@ -162,8 +161,6 @@
 		</weaponTags>
 		<apparelMoney>300~900</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -173,7 +170,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>200~300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -222,7 +219,7 @@
 
 	<PawnKindDef>
 		<defName>LogannTraderPawn</defName>
-		<label>logann trader</label>
+		<label>requisitions officer</label>
 		<trader>true</trader>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
@@ -252,8 +249,6 @@
 		</weaponTags>
 		<apparelMoney>300~900</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -263,7 +258,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>200~300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -312,7 +307,7 @@
 
 	<PawnKindDef>
 		<defName>LogannSlavePawn</defName>
-		<label>logann slave</label>
+		<label>slave</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -341,8 +336,6 @@
 		</weaponTags>
 		<apparelMoney>300~900</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -352,7 +345,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>200~300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -401,7 +394,7 @@
 
 	<PawnKindDef>
 		<defName>LogannRefugeePawn</defName>
-		<label>logann refugee</label>
+		<label>refugee</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -430,8 +423,6 @@
 		</weaponTags>
 		<apparelMoney>300~900</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -441,7 +432,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>200~300</techHediffsMoney>
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -519,8 +510,6 @@
 		</weaponTags>
 		<apparelMoney>700~9000</apparelMoney> <!--similar large increase-->
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
@@ -530,7 +519,7 @@
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>200~5000</techHediffsMoney>
 		<techHediffsTags> <!--the simple combo with up to 5k means they're liable to spawn with multiple, need to playtest-->
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.2</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -573,7 +562,7 @@
 
 	<PawnKindDef>
 		<defName>LogannMilBasePawn</defName>
-		<label>logann guard</label>
+		<label>lms guard</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -603,13 +592,16 @@
 		</weaponTags>
 		<apparelMoney>1500~5800</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>1000~15000</techHediffsMoney>
 		<techHediffsTags>
-			<li>Simple</li>
+			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -686,8 +678,11 @@
 		</weaponTags>
 		<apparelMoney>1500~5800</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>1000~15000</techHediffsMoney>
@@ -739,7 +734,7 @@
 
 	<PawnKindDef>
 		<defName>LogannBrawlerPawn</defName>
-		<label>logann brawler</label>
+		<label>brawler</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -768,8 +763,11 @@
 		</weaponTags>
 		<apparelMoney>1500~25000</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>1000~15000</techHediffsMoney>
@@ -825,7 +823,7 @@
 
 	<PawnKindDef>
 		<defName>LogannOfficerPawn</defName>
-		<label>logann officer</label>
+		<label>officer</label>
 		<race>Human</race>
 		<defaultFactionType>LogannMilitaryState</defaultFactionType>
 		<isFighter>True</isFighter>
@@ -854,8 +852,11 @@
 		</weaponTags>
 		<apparelMoney>1500~26000</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>Military</li>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>2000~30000</techHediffsMoney>
@@ -936,8 +937,10 @@
 		</weaponTags>
 		<apparelMoney>2500~42000</apparelMoney>
 		<apparelTags>
-			<li>Spacer</li>
-			<li>Military</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<techHediffsMoney>2000~8000</techHediffsMoney> <!--actually a downgrade here significantly for some reason-->

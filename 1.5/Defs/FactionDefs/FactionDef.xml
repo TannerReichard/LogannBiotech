@@ -120,7 +120,7 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<LogannMilBasePawn>50</LogannMilBasePawn>
+					<LogannMilBasePawn>50</LogannMilBasePawn> <!-- these have low combat power but high stats so a base should be hard to invade -->
 					<LogannColonistPawn>70</LogannColonistPawn>
 					<LogannSecurityPawn>90</LogannSecurityPawn>
 					<LogannExecutivePawn>250</LogannExecutivePawn>

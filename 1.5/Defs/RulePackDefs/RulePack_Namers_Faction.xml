@@ -5,14 +5,18 @@
 		<defName>NamerFactionLogann</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[firstPart]'[secondPart] [union]</li>
+				<li>r_name->[firstPart] [union]</li>
 
 				<li>firstPart->Logann</li>
 				<li>firstPart->LMS</li>
-
+				
+				<!-- this isn't implementing quite how i would like it to -->
+				<!--
 				<li>secondPart->Military</li>
 				<li>secondPart->Mercenary</li>
 				<li>secondPart->Marqued</li>
+				-->
+				
 				<li>secondPart->1st</li>
 				<li>secondPart->7th</li>
 				<li>secondPart->53rd</li>
@@ -35,7 +39,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[firstPart] [secondPart]</li>
+				<li>r_name->[secondPart] [union]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
