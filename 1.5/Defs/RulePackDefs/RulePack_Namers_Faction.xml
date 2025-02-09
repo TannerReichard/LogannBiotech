@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!--========================== Faction Name =============================-->
+	
 	<RulePackDef>
 		<defName>NamerFactionLogann</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[firstPart] [union]</li>
+				<li>r_name->[firstPart] [secondPart] [union]</li>
 
 				<li>firstPart->Logann</li>
 				<li>firstPart->LMS</li>
 				
-				<!-- this isn't implementing quite how i would like it to -->
-				<!--
 				<li>secondPart->Military</li>
 				<li>secondPart->Mercenary</li>
 				<li>secondPart->Marqued</li>
-				-->
 				
-				<li>secondPart->1st</li>
-				<li>secondPart->7th</li>
-				<li>secondPart->53rd</li>
-				<li>secondPart->117th</li>
-				<li>secondPart->222nd</li>
-
-				<li>union->Division</li>
-				<li>union->Company</li>
-				<li>union->Battalion</li>
+				<li>union->Command</li>
 				<li>union->Outpost</li>
+				<li>union->Sentinels</li>
 
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
 
+	<!--========================== Settlement Name =============================-->
+	
 	<RulePackDef>
 		<defName>NamerSettlementLogann</defName>
-		<include>
-			<li>NamerFactionLogann</li>
-		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[secondPart] [union]</li>
+				<li>r_name->[unit] [group]</li>
+
+				<li>unit->1st</li>
+				<li>unit->7th</li>
+				<li>unit->53rd</li>
+				<li>unit->117th</li>
+				<li>unit->222nd</li>
+
+				<li>group->Division</li>
+				<li>group->Company</li>
+				<li>group->Battalion</li>
+				<li>group->Battle Group</li>
+				
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
