@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Claws -->
+	
+	<!--============================== Hediff Genes ======================================-->
+	
+	<!-- this section should be for things that manipulate the health tab and are not just xenogenes -->
+	
+	<!--they should not link to texture files -->
+	
+	<!--================== Claws ====================-->
 	
 	<GeneDef ParentName="GeneHandsBase">
 		<defName>RetractableClaws</defName>
@@ -11,7 +18,7 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<customEffectDescriptions>
-			<li>Unarmed melee attacks inflict sharp damage.</li>
+			<li>Unarmed melee attacks inflict sharp damage.</li> <!-- note, this does not actually do anything until edited by hediff defs -->
 		</customEffectDescriptions><capMods>
 			<li>
 				<capacity>Manipulation</capacity>
@@ -32,8 +39,6 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-	
-	<!-- Claws -->
 	
 	
 </Defs>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<GeneCategoryDef>
-    <defName>Logann</defName>
-    <label>logann</label>
-    <displayPriorityInXenotype>859</displayPriorityInXenotype>
-</GeneCategoryDef>
+    
+    <!--=========================== Initialize Xenotype ===================================-->
+    
+    <GeneCategoryDef>
+        <defName>Logann</defName>
+        <label>logann</label>
+        <displayPriorityInXenotype>859</displayPriorityInXenotype>
+    </GeneCategoryDef>
 </Defs>

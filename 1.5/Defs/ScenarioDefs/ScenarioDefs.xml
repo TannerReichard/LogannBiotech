@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--Logann Main-->
+	<!--============================= Scenario Defs ======================================-->
+	
+	<!-- Right now this is just the crashlanded start but refit with Logann, but we can add more if needed -->
+	
+	<!--==================== Logann Basic Start ========================-->
+	
 	<ScenarioDef>
 		<defName>LogannOutpost</defName>
 		<label>Logann Outpost</label>
@@ -46,7 +51,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>MealSurvivalPack</thingDef>
-					<count>75</count>
+					<count>50</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>

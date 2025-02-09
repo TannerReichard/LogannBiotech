@@ -14,10 +14,10 @@
     <combatPowerFactor>1.3</combatPowerFactor>
 		<genes>
 			<li>Aggression_Aggressive</li>
-			<li>Logann_ears</li>
-			<li>Logannhead</li>
+			<li>LogannEars</li>
+			<li>LogannHead</li>
 			<li>WolverineFur</li>
-			<li>Logann_Tail</li>
+			<li>LogannTail</li>
 			<li>RetractableClaws</li>
 			<li>AG_Stinky</li>
 			<li>Robust</li>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!-- Player faction: Standard -->
+<!--============================= Player Faction for the all-Logann start ========================-->
+	
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>LogannPlayerColony</defName>
 		<label>Logann Colony</label>
@@ -14,6 +15,7 @@
 		<factionNameMaker>NamerFactionLogann</factionNameMaker>
 		<settlementNameMaker>NamerSettlementLogann</settlementNameMaker>
 		<allowedCultures>
+			<!-- right now these are somewhat functionally identical until we edit them -->
 			<li MayRequire="Ludeon.Rimworld.Ideology">C_Logann</li>
 			<li MayRequire="Ludeon.Rimworld.Ideology">Rustican</li>
 		</allowedCultures>

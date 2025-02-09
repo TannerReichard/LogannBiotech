@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	
+	<!--========================= Non Pawn Namer Rules ============================-->
+	
+	<!-- should probably add culture namers here if we want to go that route -->
+	<!-- if it gets more complex or lengthy we can add more entries to a text file like with the xenohumans defs -->
 
 	<!--========================== Faction Name =============================-->
 	

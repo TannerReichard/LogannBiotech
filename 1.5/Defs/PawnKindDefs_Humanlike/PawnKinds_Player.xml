@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  
+  <!--===================== Player Faction Pawns =======================-->
+
+  <!--could modify this to add tribal/ultratech/alt-start loganns if we wanted to -->
+  
+  <!--============= Base Logann Scenario Pawns ==================-->
 
   <PawnKindDef Abstract="True" Name="BaseLogannPlayerPawnKind">
     <race>Human</race>
@@ -42,8 +48,5 @@
     </techHediffsDisallowTags>
     <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
-
-  <!--could modify this to add tribal/ultratech/alt-start loganns if we wanted to -->
-  
   
 </Defs>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+	
+	<!--=============================== Head Types ==================================-->
+	
+	<!-- modifies the visual gene defs for heads -->
 
 	<HeadTypeDef Name="LogannHeadBase" ParentName="AverageBase" Abstract="True">
 		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
@@ -8,7 +12,7 @@
 		<randomChosen>true</randomChosen>
 		<selectionWeight>999999</selectionWeight>
 		<requiredGenes>
-			<li>Logannhead</li>
+			<li>LogannHead</li>
 		</requiredGenes>
 		<eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
 	</HeadTypeDef>

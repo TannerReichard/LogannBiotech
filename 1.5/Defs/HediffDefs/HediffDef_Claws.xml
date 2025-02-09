@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
+	
+	<!--=============================== Adding Function to Hediff Genes ========================-->
+	
+	<!--could potentially add the healing factor stuff here -->
+	
+	<!--=================== Claws =====================-->
+	
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>RetractableClaws</defName>
 		<label>retractable claws</label>
@@ -15,7 +22,7 @@
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
-						<label>retractable claws</label>
+						<label>retractable claws</label> <!-- can edit how powerful the claws are here -->
 						<capacities>
 							<li>Scratch</li>
 						</capacities>

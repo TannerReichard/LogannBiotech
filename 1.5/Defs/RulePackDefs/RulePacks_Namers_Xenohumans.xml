@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<!--=========================== Pawn Names Generator Rules ==============================-->
+	
+	<!-- edit these in the text files of the languages section -->
+	<!-- also if there's a need, we can add in guaranteed full names for unique pawns -->
 
 	<!--====================== Logann Base ======================-->
 
