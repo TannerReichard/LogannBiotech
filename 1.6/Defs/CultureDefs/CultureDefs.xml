@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--================================== Logann Culture Base ======================================-->
+	
+	<!-- this didn't exist in the original because cultures didn't exist; it does give us an opportunity to manifest the original spirit of the faction on the map though -->
+	
+	<CultureDef>
+		<defName>C_Logann</defName>
+		<label>Logann</label>
+		<description>The culture of the Logann Military State.</description>
+		<!--this might fuck up-->
+		<!--<nameMaker>NamerLogannBase</nameMaker>-->
+		<!--note, it did in fact fuck up, but I'm not abandoning it just yet. Can't resolve different male/female naming schemas. Rest should be normal tho -->
+		
+		<!-- these next few we can add name maker rules for to additionally keep things in line -->
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>UI/Cultures/Logann</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>0.9</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<!-- don't want them spawning in with tattoos as you won't see them with the fur -->
+				<tag>NaturalTattoo</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--============================== Logann Backstories - Childhood ============================-->
+	
+	<!-- these are copied over directly from the Logann backstories with a couple of minor flair pieces I've put on to learn the tag system -->
+	
+	<!-- also yeezy petes they added soooooo many backstories -->
+	
+	<!--============================== Spy Kid ============================-->
+	<!-- Rounded role -->
+	
+	<BackstoryDef>
+		<defName>LogannSpyKid</defName>
+		<title>operative trainee</title>
+		<titleShort>Operative-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for specialization in infiltration and sabotage operations. Unfortunately, [PAWN_pronoun] now finds little beauty in art, seeing it only as an expensive target to destroy. They are, however, accustom to rough living. </baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>2</Social>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<possessions>
+			<WoodLog>10</WoodLog>
+		</possessions>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	<!--============================== Marksman Kid ============================-->
+	<!-- Combat Focused role, i think in theory. Earnestly the description here doesn't match the skillset at all, we should probs change -->
+
+	<BackstoryDef>
+		<defName>LogannToughKid</defName>
+		<title>marksman trainee</title>
+		<titleShort>MK-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] had superior hand-eye coordination and sharp eyesight, so [PAWN_pronoun] was trained for advanced marksmanship and scouting as a potential detached sniper or dedicated marksman.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Melee>4</Melee>
+			<Plants>2</Plants>
+			<Social>3</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<!--============================== Engineer Child ============================-->
+	<!-- Crafting/intellectual stats -->
+
+	<BackstoryDef>
+		<defName>LogannEngineerKid</defName>
+		<title>combat engineer trainee</title>
+		<titleShort>Engineer-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained as a combat engineer - Repairing combat vehicles and demolishing enemy structures, as well as vehicle crew operations.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Crafting>2</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<possessions>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</possessions>
+	</BackstoryDef>
+
+	<!--============================== Officer Kid ============================-->
+	<!-- Rounded role -->
+
+	<BackstoryDef>
+		<defName>LogannCuriousKid</defName>
+		<title>officer trainee</title>
+		<titleShort>Officer-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained as an officer candidate, specializing in large unit tactics.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Plants>3</Plants>
+			<Crafting>3</Crafting>
+			<Social>3</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Starfighter Kid ============================-->
+	<!-- These bonuses are all over the place -->
+
+	<BackstoryDef>
+		<defName>LogannStarfighterKid</defName>
+		<title>starfighter pilot trainee</title>
+		<titleShort>SP-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained in advanced starfighter piloting, and various survival and combat techniques.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>6</Construction>
+			<Melee>4</Melee>
+			<Plants>3</Plants>
+			<Crafting>3</Crafting>
+			<Social>6</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Commando Kid ============================-->
+	<!-- First Commando -->
+
+	<BackstoryDef>
+		<defName>LogannCommandoKid</defName>
+		<title>commando trainee</title>
+		<titleShort>CD-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for commando strikes as a member of a small unit. [PAWN_pronoun] has been through extensive combat and survival training.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>2</Crafting>
+			<Shooting>4</Shooting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Commando Marksman Kid ============================-->
+	<!-- Second Commando -->
+
+	<BackstoryDef>
+		<defName>LogannCMKid</defName>
+		<title>commando marksman trainee</title>
+		<titleShort>CM-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for commando strikes as a marksman in a small unit. [PAWN_pronoun] has been through extensive combat and survival training, specializing in marksmanship.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Construction>3</Construction>
+			<Crafting>2</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Colony Kid ============================-->
+	<!-- This one is listed as colonist, but clearly implies a medical background. Might want to change it to "orderly" or something -->
+
+	<BackstoryDef>
+		<defName>LogannColonyKid</defName>
+		<title>combat medic trainee</title>
+		<titleShort>Medic-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained as a combat medic, and can perform life-saving operations in the field.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Construction>1</Construction>
+			<Plants>2</Plants>
+			<Medicine>5</Medicine>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Infantry Kid ============================-->
+	<!-- Infantry background -->
+
+	<BackstoryDef>
+		<defName>LogannInf1Kid</defName>
+		<title>infantry trainee</title>
+		<titleShort>I-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for infantry deployment as part of a large unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Plants>4</Plants>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Marine Kid ============================-->
+	<!-- Oo-rah. He's a marine. -->
+
+	<BackstoryDef>
+		<defName>LogannMarineKid</defName>
+		<title>marine trainee</title>
+		<titleShort>M-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for amphibious operations - recieving general infantry combat training, as well as special training for diving and aquatic operations.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Mining>4</Mining>
+			<Plants>4</Plants>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== City Kid ============================-->
+	<!-- This doesn't seem to correlate either other than the social -->
+
+	<BackstoryDef>
+		<defName>LogannCityKid</defName>
+		<title>comms specialist trainee</title>
+		<titleShort>Comm-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained as a communications specialist - able to jam enemy communications, or break through enemy jamming to maintain contact.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>3</Melee>
+			<Construction>2</Construction>
+			<Social>4</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Second Infantry Kid ============================-->
+	<!-- Kind of redundant with the prior combat medic role -->
+
+	<BackstoryDef>
+		<defName>LogannInf2Kid</defName>
+		<title>infantry medic trainee</title>
+		<titleShort>IMed-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for infantry deployment as a medic in a large unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Third Infantry Kid ============================-->
+	<!-- No seriously we need to eliminate some redundancies -->
+
+	<BackstoryDef>
+		<defName>LogannInf3Kid</defName>
+		<title>infantry frontier trainee</title>
+		<titleShort>IF-Trainee</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] was trained for front-line infantry deployment as part of the melee vanguard of a large unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Crafting>2</Crafting>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<!--============================== Logann Backstories - Adulthood ============================-->
+	
+	<!--ChJess's original description here was "Adult Stories - not porn", and I just think that's great -->
+
+	<!--============================== Logann Commander ============================-->
+	<!-- Ok halfway there, a lot of these seem to have redundant stat bonuses with the child backgrounds -->
+
+	<BackstoryDef>
+		<defName>LogannCommander</defName>
+		<title>army commander</title>
+		<titleShort>Army Commander</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] leads troops as their commander. [PAWN_pronoun] has successfully led troops through a number of conflicts.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Construction>4</Construction>
+			<Plants>4</Plants>
+			<Crafting>4</Crafting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Commander ============================-->
+	<!-- This is the same as the above one but they added mercenary to it, same stats even -->
+
+	<BackstoryDef>
+		<defName>LogannMercCommander</defName>
+		<title>merc commander</title>
+		<titleShort>Merc Commander</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] leads a troop of mercenaries as their commander. [PAWN_pronoun] has successfully led troops through a number of conflicts.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Construction>4</Construction>
+			<Plants>4</Plants>
+			<Crafting>4</Crafting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Army Soldier ============================-->
+	<!-- I feel like this should be more combat focused instead of crafting, social, intellectual, and melee -->
+
+	<BackstoryDef>
+		<defName>LogannArmySoldier</defName>
+		<title>army soldier</title>
+		<titleShort>Army Soldier</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was assigned to one of the larger units, serving through several major conflicts.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Crafting>3</Crafting>
+			<Social>3</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Mercenary Soldier ============================-->
+	<!-- This is the same as the above, but they subtracted one from melee. Only merc description with a difference. -->
+
+	<BackstoryDef>
+		<defName>LogannMercSoldier</defName>
+		<title>merc soldier</title>
+		<titleShort>Merc Soldier</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was contracted with a large mercenary unit, serving through several major conflicts.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Crafting>3</Crafting>
+			<Social>3</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Gunsmith ============================-->
+	<!-- High crafting and shooting, can probably flesh this out a bit tho -->
+
+	<BackstoryDef>
+		<defName>LogannGunsmith</defName>
+		<title>army gunsmith</title> <!-- could probably fluff "army" for "Logann" -->
+		<titleShort>Army Gunsmith</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef]'s training was augmented with gunsmithing and maintenance, serving [PAWN_possessive] platoon's needs for weapon maintenance and requisition.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Crafting>9</Crafting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Gunsmith  ============================-->
+	<!-- This is the exact same as the above but they added merc to the name. Could change bodytype to hulk for mercs? -->
+
+	<BackstoryDef>
+		<defName>LogannMercGunmaker</defName>
+		<title>merc gunsmith</title>
+		<titleShort>Merc Gunsmith</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef]'s training was augmented with gunsmithing and maintenance, serving [PAWN_possessive] merc unit's needs for weapon maintenance and requisition.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Crafting>9</Crafting>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Battlesim Developer ============================-->
+	<!-- This at least has an interesting premise; we could probably modify traits or bodysize or add traits for this -->
+
+	<BackstoryDef>
+		<defName>LogannDeveloper</defName>
+		<title>battlesim developer</title>
+		<titleShort>Battlesim Developer</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] has an extensive expertise in programming and tactical combat, making [PAWN_possessive] a leading expert in BattleSim development - creating extremely effective training simulations for troops.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Crafting>5</Crafting>
+			<Intellectual>7</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Engineer  ============================-->
+	<!-- I guess this is the mining role -->
+
+	<BackstoryDef>
+		<defName>LogannEngineer</defName>
+		<title>army engineer</title>
+		<titleShort>Army Engineer</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as a combat engineer with a major army detachment, servicing vehicles and equipment.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Construction>3</Construction>
+			<Mining>6</Mining>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Engineer  ============================-->
+	<!-- This is the same as above but they added merc to it -->
+
+	<BackstoryDef>
+		<defName>LogannMercEngineer</defName>
+		<title>merc engineer</title>
+		<titleShort>Merc Engineer</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as a combat engineer with a famous merc unit, servicing their vehicles and equipment.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Construction>3</Construction>
+			<Mining>6</Mining>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Medic ============================-->
+	<!-- The mash reference is fun -->
+
+	<BackstoryDef>
+		<defName>LogannMedic</defName>
+		<title>army medic</title>
+		<titleShort>Army Medic</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] serves as a combat medic, performing triage on the front lines, or more extensive medicine at a MASH (Mobile Army Surgical Hospital) unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Medicine>6</Medicine>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Medic ============================-->
+	<!-- oh god it's happening again -->
+
+	<BackstoryDef>
+		<defName>LogannMercMedic</defName>
+		<title>merc medic</title>
+		<titleShort>merc Medic</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] is contracted as a mercenary combat medic, performing triage on the front lines, or more extensive medicine at a MASH (Mobile Army Surgical Hospital) unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Medicine>6</Medicine>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Scout ============================-->
+	<!-- this one kind of makes sense with the skill allocation at least -->
+
+	<BackstoryDef>
+		<defName>LogannScout</defName>
+		<title>army scout</title>
+		<titleShort>Army Scout</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] serves as a scout for a large detachment of troops, identifying hazards and potential ambush points.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Construction>3</Construction>
+			<Plants>3</Plants>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Scout ============================-->
+	<!-- I'm wondering if they meant to make an entire separate faction that only used merc defs but never got to it -->
+
+	<BackstoryDef>
+		<defName>LogannMercScout</defName>
+		<title>merc scout</title>
+		<titleShort>Merc Scout</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] serves as a scout for a mercenary group, identifying hazards and potential ambush points.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Construction>3</Construction>
+			<Plants>3</Plants>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Major ============================-->
+	<!-- This one is quite powerful, but the name doesn't quite match the description -->
+
+	<BackstoryDef>
+		<defName>LogannMajor</defName>
+		<title>army major</title>
+		<titleShort>Army Major</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as intelligence officer for a large army unit, providing tactical support and intel coordination for [PAWN_possessive] unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Major ============================-->
+	<!-- Once more, with ~feeling~ -->
+
+	<BackstoryDef>
+		<defName>LogannMercMajor</defName>
+		<title>merc major</title>
+		<titleShort>Merc Major</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as intelligence officer for a large mercenary corps, providing tactical support and intel coordination for [PAWN_possessive] unit.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Pilot ============================-->
+	<!-- Why is the melee skill of a fighter pilot equal to the highest melee of any backstory -->
+
+	<BackstoryDef>
+		<defName>LogannPilot</defName>
+		<title>army pilot</title>
+		<titleShort>Army Pilot</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as a military pilot in a variety of fighter and support craft.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>6</Melee>
+			<Social>5</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Pilot ============================-->
+	<!-- ...but Lieutenant Zechs! -->
+
+	<BackstoryDef>
+		<defName>LogannMercPilot</defName>
+		<title>merc pilot</title>
+		<titleShort>Merc Pilot</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was contracted as a military pilot in a variety of fighter and support craft, in multiple combat roles.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>6</Melee>
+			<Social>5</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Commando ============================-->
+	<!-- These next 4 have the highest amount of overall stat points, with strong shooting, melee and a few other skills -->
+
+	<BackstoryDef>
+		<defName>LogannCommando</defName>
+		<title>army commando</title>
+		<titleShort>Army Commando</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served with a small army commando unit, executing strike or extraction missions deep behind enemy lines.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Crafting>4</Crafting>
+			<Medicine>4</Medicine>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Commando ============================-->
+	<!-- You guessed it -->
+
+	<BackstoryDef>
+		<defName>LogannMercCommando</defName>
+		<title>merc commando</title>
+		<titleShort>Merc Commando</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served with a small merc commando unit, executing strike or extraction missions deep behind enemy lines.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Crafting>4</Crafting>
+			<Medicine>4</Medicine>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Demolitions Expert ============================-->
+	<!-- This is the same as above, but swap crafting for construction -->
+
+	<BackstoryDef>
+		<defName>LogannDemo</defName>
+		<title>army demolitions</title>
+		<titleShort>Army Demo</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as a demolitions and heavy weapons expert in a large detachment of troops. [PAWN_pronoun] has an expertise in various explosives, as well as combat engineering.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Construction>4</Construction>
+			<Medicine>4</Medicine>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Merc Demolitions Expert ============================-->
+	<!-- I think this is the last merc type -->
+
+	<BackstoryDef>
+		<defName>LogannMercDemo</defName>
+		<title>merc demolitions</title>
+		<titleShort>Merc Demo</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] served as a demolitions and heavy weapons expert in a large merc unit. [PAWN_pronoun] has an expertise in various explosives, as well as combat engineering.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Construction>4</Construction>
+			<Medicine>4</Medicine>
+		</skillGains>
+	</BackstoryDef>
+
+	<!--============================== Logann Mechwarrior ============================-->
+	<!-- Boog Yoppers approved -->
+
+	<BackstoryDef>
+		<defName>LogannMechwarrior</defName>
+		<title>mech pilot</title> <!-- this title and the next line are in as original, we could choose to rectify-->
+		<titleShort>Mechwarrior</titleShort>
+		<slot>Adulthood</slot> <!-- get ready for a DESCRIPTION -->
+		<baseDesc>[PAWN_nameDef] is a Battlemech pilot, a Mech Warrior. Operating these massive walking tanks, MechWarriors serve in the armies of the Great Houses or as part of a Mercenary unit, fight in the gladiatorial arenas of Solaris VII, or operate on the fringes of society as pirates and bandits. Among the Clans, a MechWarrior can either be trueborn or freeborn, with the former enjoying greater social standing. The jumpship [PAWN_pronoun] was on suffered a jump-drive malfunction, casting them off into the unknown. After waiting several weeks for rescue, with supplies running low, the crew decided to use the escape pods at the nearest habitable planet...</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>LogannBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+</Defs>

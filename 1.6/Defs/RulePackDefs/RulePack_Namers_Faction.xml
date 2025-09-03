@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!--========================= Non Pawn Namer Rules ============================-->
+	
+	<!-- should probably add culture namers here if we want to go that route -->
+	<!-- if it gets more complex or lengthy we can add more entries to a text file like with the xenohumans defs -->
+
+	<!--========================== Faction Name =============================-->
+	
+	<RulePackDef>
+		<defName>NamerFactionLogann</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[firstPart] [secondPart] [union]</li>
+
+				<li>firstPart->Logann</li>
+				<li>firstPart->LMS</li>
+				
+				<li>secondPart->Military</li>
+				<li>secondPart->Mercenary</li>
+				<li>secondPart->Marqued</li>
+				
+				<li>union->Command</li>
+				<li>union->Outpost</li>
+				<li>union->Sentinels</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!--========================== Settlement Name =============================-->
+	
+	<RulePackDef>
+		<defName>NamerSettlementLogann</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[unit] [group]</li>
+
+				<li>unit->1st</li>
+				<li>unit->7th</li>
+				<li>unit->53rd</li>
+				<li>unit->117th</li>
+				<li>unit->222nd</li>
+
+				<li>group->Division</li>
+				<li>group->Company</li>
+				<li>group->Battalion</li>
+				<li>group->Battle Group</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

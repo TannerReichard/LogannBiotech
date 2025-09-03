@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--=========================== Culture Icons =========================-->
+	
+	<!-- tells culture defs where to go for the menu screen -->
+	
+	<IdeoIconDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>Logann_IdeoIcon</defName>
+		<iconPath>UI/Icons/IdeoIcons/LogannCross</iconPath>
+	</IdeoIconDef>
+</Defs>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============================== Visual Genes ======================================-->
+	
+	<!-- this section is for things that edit the outward appearance of the pawn and have associated textures-->
+	
+	<!-- these should all link to texture files -->
+	
+	
+	<!--================ Head ==========================-->
+	
+	<GeneDef Name="LogannGeneHeadBase" ParentName="GeneJawBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Logann</displayCategory>
+		<exclusionTags>
+			<li>AG_Heads</li>
+			<li>Heads</li>
+			<li>Head</li>
+		</exclusionTags>
+	</GeneDef>
+
+  <GeneDef ParentName="LogannGeneHeadBase">
+    <defName>LogannHead</defName>
+    <label>logann head</label>
+    <labelShortAdj>logann head</labelShortAdj>
+    <description>Carriers of this gene have a strong jaw and face reminiscent of a wolverine.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+	<neverGrayHair>false</neverGrayHair>
+    <displayCategory>Logann</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/GeneIcon_LogannHead</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+	<forcedHeadTypes>
+		<li>LogannHead_Female</li>
+		<li>LogannHead_Male</li>
+	</forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+	<symbolPack>
+		<prefixSymbols>
+			<li>
+				<symbol>wolverine</symbol>
+			</li>
+			<li>
+				<symbol>logann</symbol>
+			</li>
+			<li>
+				<symbol>animal</symbol>
+			</li>
+		</prefixSymbols>
+	</symbolPack>
+    <missingGeneRomanceChanceFactor>0.1</missingGeneRomanceChanceFactor>
+  </GeneDef>
+
+
+	<!--================ Tail ==========================-->
+	
+	<!-- this adds a tat of cold protection on top of the graphic -->
+	
+	<GeneDef ParentName="GeneTailBase">
+		<defName>LogannTail</defName>
+		<label>logann tail</label>
+		<description>Carriers of this gene grow a bushy tail which protects them from colder temperatures and houses their scent glands.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_LogannTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<renderNodeProperties>
+			<li>
+			<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+			<texPath>Things/Pawn/Humanlike/BodyAttachments/LogannTail</texPath>
+			<colorType>Hair</colorType>
+			<overrideMeshSize>(1, 1)</overrideMeshSize>
+			<parentTagDef>Body</parentTagDef>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+				<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+				<defaultData>
+				<layer>-2</layer>
+				</defaultData>
+				<dataNorth>
+				<offset>(0.1, 0, -0.25)</offset>
+				<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+				<offset>(-0.1, 0, -0.25)</offset>
+				</dataSouth>
+				<dataEast>
+				<offset>(-0.5, 0, -0.15)</offset>
+				</dataEast>
+				<dataWest>
+				<offset>(0.5, 0, -0.15)</offset>
+				</dataWest>
+			</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<!--=============== Ears ===================-->  
+	
+	<!-- this one is purely cosmetic for the moment -->
+	
+	<GeneDef Name="Logann_GeneEarsBase" ParentName="GeneEarsBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Ears</endogeneCategory>
+		<displayCategory>Logann</displayCategory>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Logann_GeneEarsBase">
+		<defName>LogannEars</defName>
+		<label>logann ears</label>
+		<description>Carriers of this gene have short, thick, furry ears.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_LogannEars</iconPath>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/LogannEars/Logann_ears</texPath>
+				<!-- <shaderTypeDef>CutoutComplex</shaderTypeDef> -->
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>wolverine</symbol>
+				</li>
+				<li>
+					<symbol>logann</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+	</GeneDef>
+	
+	<!--================= Wolverine Fur ==============-->
+	
+	<!-- this references fur defs and is also just a mod of the yttakin fur type -->
+	<!-- provides some cold resist -->
+	
+	<GeneDef>
+		<defName>WolverineFur</defName>
+		<label>wolverine fur</label>
+		<labelShortAdj>wolfurry</labelShortAdj>
+	    <description>Carriers of this gene have warm, wiry, and contrasting colors of fur.</description>
+	    <biostatCpx>1</biostatCpx>
+	    <biostatMet>0</biostatMet>
+	    <displayCategory>Logann</displayCategory>
+	    <displayOrderInCategory>400</displayOrderInCategory>
+		<fur>L_WolverineFur</fur>
+		<skinIsHairColor>true</skinIsHairColor> <!-- we can mod this in several ways, preferably we just set hair colors in xenotype def -->
+		<tattoosVisible>false</tattoosVisible>
+		<missingGeneRomanceChanceFactor>0.1</missingGeneRomanceChanceFactor> <!-- can raise or lower this to encourage/discourage hybridization -->
+		<iconPath>UI/Icons/Genes/GeneIcon_WolverineFur</iconPath>
+	    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+	    <beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+	    </beardTagFilter>
+	    <exclusionTags>
+			<li>Body</li>
+			<li>Bodies</li>
+			<li>AG_Bodies</li>
+			<li>Skin</li>
+			<li>Fur</li>
+			<li>Scale</li>
+	    </exclusionTags>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>wolverine</symbol>
+				</li>
+				<li>
+					<symbol>fur</symbol>
+				</li>
+				<li>
+					<symbol>logann</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>	

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--============================== Hediff Genes ======================================-->
+	
+	<!-- this section should be for things that manipulate the health tab and are not just xenogenes -->
+	
+	<!--they should not link to texture files -->
+	
+	<!--================== Claws ====================-->
+	
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>RetractableClaws</defName>
+		<label>retractable claws</label>
+		<description>Carriers of this gene have large claws that extend at-will from their knuckles. Provides sharp damage to melee attacks and slightly increases manipulation.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_RetractableClaws</iconPath>
+		<displayCategory>Logann</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Unarmed melee attacks inflict sharp damage.</li> <!-- note, this does not actually do anything until edited by hediff defs -->
+		</customEffectDescriptions><capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>1.10</postFactor>
+			</li>
+		</capMods>
+	<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+				<li>
+				<hediff>RetractableClaws</hediff>
+				<bodyparts>
+					<li>Hand</li>
+					<li>Hand</li>
+				</bodyparts>
+				</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	
+</Defs>
